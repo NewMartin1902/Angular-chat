@@ -1,0 +1,67 @@
+@import '../styles'
+
+.authPage
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 100vh
+    background-color: $backgroundColor
+    padding: 15px
+.authPageContent
+    text-align: center
+    .logoText
+        margin-bottom: 50px
+    .pageTitle
+        font-weight: 600
+        font-size: 21px
+        margin-bottom: 10px
+    .pageDescription
+        color: $lightTextColor
+        margin-bottom: 25px
+    form
+        background-color: $whiteColor
+        padding: 40px
+        border-radius: 5px
+        text-align: left
+        .inputIcon
+            width: 370px
+            display: flex
+            align-items: center
+            background-color: $backgroundColor
+            border-radius: 7px
+            border: 1px solid $borderColor
+            margin-bottom: 20px
+            margin-top: 10px
+            .icon
+                width: 50px
+                display: block
+                height: 45px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: $lightTextColor
+                border-right: 1px solid $borderColor
+            input
+                width: calc(100% - 50px)
+                height: 45px
+                border: none
+                background: transparent
+                font-weight: 600
+                color: $lightTextColor
+                padding-left: 15px
+                &::placeholder
+                    color: $lightTextColor
+        .forgotPassword
+            display: flex
+            justify-content: space-between
+            a
+                color: $lightTextColor
+                font-size: 14px
+        button
+            margin-top: 25px
+        .rememberUser
+            label
+                margin-left: 10px
+
+    .signUpLink
+        margin-top: 50px
